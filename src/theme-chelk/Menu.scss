@@ -1,0 +1,113 @@
+@mixin setPhoneStyle() {
+  height: 20%;
+  background-color: dodgerblue;
+  border-radius: 0 12% 12% 0;
+}
+
+@mixin setComputerStyle() {
+  height: 6vh;
+  background-color: dodgerblue;
+  border-radius: 0 0 8% 8%;
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (min-width: 500px) {
+  .Menu {
+    position: relative;
+    top: 0;
+    width: 100vw;
+    @include setComputerStyle();
+  }
+  .Menu-back {
+    width: 3%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .Menu-avatar {
+    display: flex;
+    align-items: center;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .Menu-input {
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+  }
+  .Menu-choose {
+    display: none;
+  }
+  .Menu-text {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50%;
+    align-items: center;
+    gap: 45px;
+    span {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Menu {
+    position: relative;
+    top: 0;
+    width: 100vw;
+    @include setComputerStyle();
+  }
+  .Menu-back {
+    width: 3%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .Menu-avatar {
+    margin-left: 1%;
+    display: flex;
+    align-items: center;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .Menu-input {
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+  }
+  .Menu-text {
+    // display: flex;
+    // flex-direction: row;
+    // margin-left: 0%;
+    // align-items: center;
+    // gap: 45px;
+    // span {
+    //   &:hover {
+    //     cursor: pointer;
+    //   }
+    // }
+    display: none;
+  }
+  .Menu-choose {
+    margin-left: 1%;
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .choose--style {
+    font-size: 2.4rem;
+  }
+}

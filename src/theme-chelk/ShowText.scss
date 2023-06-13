@@ -1,0 +1,43 @@
+@media screen and (min-width: 500px) {
+  .ShowText-row {
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+    margin-top: 2%;
+  }
+  .ShowText--content {
+    display: flex;
+    flex-direction: column;
+  }
+  .closeIcon {
+    display: flex;
+    align-items: center;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .langBlock {
+    width: 15vw;
+    height: 5vh;
+    //background-color: gray;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .Title {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+  }
+  .smallTitle {
+    width: 15vw;
+    height: 5vh;
+    display: block;
+    text-align: left;
+  }
+  .pagination {
+    margin-top: 5%;
+    text-align: center;
+  }
+}
