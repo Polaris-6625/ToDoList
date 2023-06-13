@@ -9,7 +9,7 @@ import {
 
 const baseURL = "http://127.0.0.1:8080/getList";
 class ShowText extends Component<any, any> {
-    constructor(props) {
+    constructor(props:any) {
         super(props);
         this.state = { isLoading: true , list: undefined , page: "1",isModalOpen:false, setIsModalOpen:false};
     }
@@ -58,7 +58,7 @@ class ShowText extends Component<any, any> {
         const handleCancel = () => {
             _this.setState({setIsModalOpen:false})
         };
-        function deleteFunc(index) {
+        function deleteFunc(index:any) {
             axios.post(baseURL, {
                 "id":index
             }).then((resp)=>{
@@ -83,7 +83,7 @@ class ShowText extends Component<any, any> {
                 </div>
                 <div className="ShowText--content">
                     {
-                        list.map((item,index) => {
+                        list.map((item:any,index:any) => {
                             const size = "small";
                             return (
                                 <div className="ShowText-row" key={index}>

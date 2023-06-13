@@ -2,16 +2,12 @@ import {Component} from "react";
 import { Button, Tooltip, Space , Avatar , Input , Dropdown } from 'antd';
 import {
     LeftOutlined,
-    SearchOutlined,
     UserOutlined,
     AudioOutlined,
     MenuFoldOutlined
 } from '@ant-design/icons';
 import "../theme-chelk/Menu.scss";
-
-const onClick: MenuProps['onClick'] = ({ key }) => {
-    message.info(`Click on item ${key}`);
-  };
+import type { MenuProps } from "antd";
 
 const items: MenuProps['items'] = [
     {
